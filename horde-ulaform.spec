@@ -18,10 +18,11 @@ URL:		http://www.horde.org/ulaform/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 BuildRequires:	rpmbuild(macros) >= 1.226
 BuildRequires:	tar >= 1:1.15.1
-Requires:	apache >= 1.3.33-2
 Requires:	apache(mod_access)
 Requires:	horde >= 3.0
+Requires:	webserver = apache
 Obsoletes:	%{_hordeapp}
+Conflicts:	apache < 1.3.33-2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -55,14 +56,14 @@ with Ulaform) please visit <http://www.horde.org/>.
 
 %description -l pl
 Ulaform to oparty na PHP system tworzenia i generowania dynamicznych
-formularzy HTML. Pozwala u¿ytkownikom tworzyæ wymy¶lne formularze
-przy u¿yciu przegl±darki WWW, a nastêpnie wy¶wietlaæ formularze na
-innych stronach WWW poprzez prost± dyrektywê include PHP wewn±trz
-znacznika <?php ... ?> lub w innych aplikacjach Horde poprzez API
-Horde Block. Ulaform ma za zadanie zast±piæ inne techniki generowania
-dynamicznych formularzy (takie jak formularze FrontPage, wymagaj±ce
-rozszerzeñ FrontPage na serwerze, czy skrypty CGI wymagaj±ce
-umiejêtno¶ci programowania).
+formularzy HTML. Pozwala u¿ytkownikom tworzyæ wymy¶lne formularze przy
+u¿yciu przegl±darki WWW, a nastêpnie wy¶wietlaæ formularze na innych
+stronach WWW poprzez prost± dyrektywê include PHP wewn±trz znacznika
+<?php ... ?> lub w innych aplikacjach Horde poprzez API Horde Block.
+Ulaform ma za zadanie zast±piæ inne techniki generowania dynamicznych
+formularzy (takie jak formularze FrontPage, wymagaj±ce rozszerzeñ
+FrontPage na serwerze, czy skrypty CGI wymagaj±ce umiejêtno¶ci
+programowania).
 
 Ulaform jest oparty na bibliotece Horde_Form ze szkieletu Horde. Daje
 to trochê przydatnych cech: mo¿liwo¶æ automatycznego sprawdzania
