@@ -162,8 +162,8 @@ fi
 %defattr(644,root,root,755)
 %doc README docs/* scripts
 %dir %attr(750,root,http) %{_sysconfdir}
-%attr(640,root,root) %config(noreplace) %{_sysconfdir}/apache.conf
-%attr(640,root,root) %config(noreplace) %{_sysconfdir}/httpd.conf
+%attr(640,root,root) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/apache.conf
+%attr(640,root,root) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/httpd.conf
 %attr(660,root,http) %config(noreplace) %{_sysconfdir}/conf.php
 %attr(660,root,http) %config(noreplace) %ghost %{_sysconfdir}/conf.php.bak
 %attr(640,root,http) %config(noreplace) %{_sysconfdir}/[!c]*.php
