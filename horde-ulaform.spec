@@ -5,7 +5,7 @@
 #
 %include	/usr/lib/rpm/macros.php
 Summary:	A form generation/processing tool
-Summary(pl):	Narzêdzie do generowania/przetwarzania formularzy
+Summary(pl.UTF-8):   NarzÄ™dzie do generowania/przetwarzania formularzy
 Name:		horde-%{_hordeapp}
 Version:	0.1
 Release:	%{?_rc:0.%{_rc}.}%{?_snap:0.%(echo %{_snap} | tr -d -).}%{_rel}
@@ -54,26 +54,26 @@ The Horde Project writes web applications in PHP and releases them
 under the GNU Public License. For more information (including help
 with Ulaform) please visit <http://www.horde.org/>.
 
-%description -l pl
+%description -l pl.UTF-8
 Ulaform to oparty na PHP system tworzenia i generowania dynamicznych
-formularzy HTML. Pozwala u¿ytkownikom tworzyæ wymy¶lne formularze przy
-u¿yciu przegl±darki WWW, a nastêpnie wy¶wietlaæ formularze na innych
-stronach WWW poprzez prost± dyrektywê include PHP wewn±trz znacznika
+formularzy HTML. Pozwala uÅ¼ytkownikom tworzyÄ‡ wymyÅ›lne formularze przy
+uÅ¼yciu przeglÄ…darki WWW, a nastÄ™pnie wyÅ›wietlaÄ‡ formularze na innych
+stronach WWW poprzez prostÄ… dyrektywÄ™ include PHP wewnÄ…trz znacznika
 <?php ... ?> lub w innych aplikacjach Horde poprzez API Horde Block.
-Ulaform ma za zadanie zast±piæ inne techniki generowania dynamicznych
-formularzy (takie jak formularze FrontPage, wymagaj±ce rozszerzeñ
-FrontPage na serwerze, czy skrypty CGI wymagaj±ce umiejêtno¶ci
+Ulaform ma za zadanie zastÄ…piÄ‡ inne techniki generowania dynamicznych
+formularzy (takie jak formularze FrontPage, wymagajÄ…ce rozszerzeÅ„
+FrontPage na serwerze, czy skrypty CGI wymagajÄ…ce umiejÄ™tnoÅ›ci
 programowania).
 
 Ulaform jest oparty na bibliotece Horde_Form ze szkieletu Horde. Daje
-to trochê przydatnych cech: mo¿liwo¶æ automatycznego sprawdzania
-poprawno¶ci danych, u¿ywanie JavaScriptu je¶li jest dostêpny (lub
-ponowne odrysowywanie formularza, je¶li nie), mo¿liwo¶æ
-przezroczystego u¿ywania GET lub POST itp.
+to trochÄ™ przydatnych cech: moÅ¼liwoÅ›Ä‡ automatycznego sprawdzania
+poprawnoÅ›ci danych, uÅ¼ywanie JavaScriptu jeÅ›li jest dostÄ™pny (lub
+ponowne odrysowywanie formularza, jeÅ›li nie), moÅ¼liwoÅ›Ä‡
+przezroczystego uÅ¼ywania GET lub POST itp.
 
 Projekt Horde tworzy aplikacje WWW w PHP i wydaje je na licencji GNU
-General Public License. Wiêcej informacji (w³±cznie z pomoc± dla
-Ulaform) mo¿na znale¼æ na stronie <http://www.horde.org/>.
+General Public License. WiÄ™cej informacji (wÅ‚Ä…cznie z pomocÄ… dla
+Ulaform) moÅ¼na znaleÅºÄ‡ na stronie <http://www.horde.org/>.
 
 %prep
 %setup -qcT -n %{?_snap:%{_hordeapp}-%{_snap}}%{!?_snap:%{_hordeapp}-%{version}%{?_rc:-%{_rc}}}
