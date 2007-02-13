@@ -5,7 +5,7 @@
 #
 %include	/usr/lib/rpm/macros.php
 Summary:	A form generation/processing tool
-Summary(pl.UTF-8):   Narzędzie do generowania/przetwarzania formularzy
+Summary(pl.UTF-8):	Narzędzie do generowania/przetwarzania formularzy
 Name:		horde-%{_hordeapp}
 Version:	0.1
 Release:	%{?_rc:0.%{_rc}.}%{?_snap:0.%(echo %{_snap} | tr -d -).}%{_rel}
