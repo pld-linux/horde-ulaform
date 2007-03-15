@@ -1,5 +1,5 @@
 %define	_hordeapp ulaform
-%define	_snap	2006-01-08
+%define	_snap	2007-03-15
 #define	_rc		rc1
 %define	_rel	0.1
 #
@@ -12,7 +12,7 @@ Release:	%{?_rc:0.%{_rc}.}%{?_snap:0.%(echo %{_snap} | tr -d -).}%{_rel}
 License:	GPL v2+
 Group:		Applications/WWW
 Source0:	ftp://ftp.horde.org/pub/snaps/%{_snap}/%{_hordeapp}-HEAD-%{_snap}.tar.gz
-# Source0-md5:	8a897bc7f61364866c6c010daf02dea7
+# Source0-md5:	d73d464356d6345a0922f0b254d0a237
 Source1:	%{name}.conf
 URL:		http://www.horde.org/ulaform/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
