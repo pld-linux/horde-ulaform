@@ -15,6 +15,7 @@ Source0:	ftp://ftp.horde.org/pub/snaps/%{_snap}/%{_hordeapp}-HEAD-%{_snap}.tar.g
 # Source0-md5:	d73d464356d6345a0922f0b254d0a237
 Source1:	%{name}.conf
 URL:		http://www.horde.org/ulaform/
+BuildRequires:	migrate-to-webapps
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 BuildRequires:	rpmbuild(macros) >= 1.268
 BuildRequires:	tar >= 1:1.15.1
