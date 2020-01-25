@@ -3,7 +3,6 @@
 #define	_rc		rc1
 %define	_rel	0.1
 #
-%include	/usr/lib/rpm/macros.php
 Summary:	A form generation/processing tool
 Summary(pl.UTF-8):	Narzędzie do generowania/przetwarzania formularzy
 Name:		horde-%{_hordeapp}
